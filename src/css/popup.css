@@ -1,0 +1,127 @@
+.tutorial {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 420px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 0%;
+}
+
+#tutorial-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#tutorial-sub-header {
+    margin: 10px 0px;
+    color: aqua;
+}
+
+#tutorial-text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    padding-left: 6%;
+    padding-right: 3%;
+}
+
+.examples {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tutorial-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    border-radius: 10%;
+    line-height: 50px;
+}
+
+.tutorial-yellow {
+    background-color: var(--present);
+}
+
+.tutorial-grey {
+    background-color: var(--wrong);
+}
+
+.tutorial-green {
+    background-color: var(--correct);
+}
+
+@media screen and (max-width: 500px) {
+    .tutorial {
+        width: calc(100% - 40px);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+}
+
+.popup {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 420px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 0%;
+}
+
+.error {
+    background: linear-gradient(135deg, rgba(252, 116, 5, 0.8), rgba(252, 116, 5, 0.7));
+}
+
+.error p {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.success {
+    background: linear-gradient(135deg, rgba(154, 205, 50, 0.8), rgba(154, 205, 50, 0.7));
+}
+
+.success p {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#popup-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#popup-text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    padding-left: 6%;
+    padding-right: 3%;
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
